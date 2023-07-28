@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Note</title>
+    <link href="/webjars/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/webjars/bootstrap-icons/1.10.4/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="/webjars/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div th:text="${pageV.name}" class="mb-3 mt-3"></div>
+<div th:text="${pageV.text}" class="mb-3"></div>
+<div th:text="${pageV.shortText}" class="mb-3"></div>
+<div th:text="${pageV.dateTimeCreat}" class="mb-3"></div>
+</body>
+</html>

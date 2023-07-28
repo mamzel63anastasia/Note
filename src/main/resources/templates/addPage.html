@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Note</title>
+    <link href="/webjars/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/webjars/bootstrap-icons/1.10.4/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="/webjars/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+<form method="post" class="form-control" th:object="${myPage}">
+    <div class="mb-3 mt-3">
+        <input type="text" class="form-control" th:field="*{namePage}" placeholder="Введите тему">
+    </div>
+    <div class="mb-3">
+        <textarea class="form-control" th:field="*{textPage}" placeholder="Основной текст"></textarea>
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" th:field="*{shortText}" placeholder="Введите тег">
+    </div>
+    <div>
+        <input type="submit" class="btn btn-primary mb-3" value="Сохранить">
+    </div>
+</form>
+</div>
+</div>
+</body>
+</html>
